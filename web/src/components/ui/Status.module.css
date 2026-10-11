@@ -1,0 +1,58 @@
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.pending {
+  background: var(--color-warning-bg);
+  color: var(--color-warning);
+}
+.locked {
+  background: var(--color-locked-bg);
+  color: var(--color-locked);
+}
+.unlocked {
+  background: var(--color-info-bg);
+  color: var(--color-info);
+}
+.completed {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+}
+.rejected {
+  background: var(--color-warning-bg);
+  color: var(--color-warning);
+}
+.failed {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+}
+.success {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+}
+.error {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+}
+.info {
+  background: var(--color-info-bg);
+  color: var(--color-info);
+}
+.neutral {
+  background: var(--color-neutral-bg);
+  color: var(--color-neutral);
+}

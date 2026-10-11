@@ -1,0 +1,49 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.quickRow {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.quickChip {
+  flex: 1;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-alt);
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.quickChip:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  background: var(--color-secondary-bg-hover);
+}
+
+.quickChip:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.preview {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.preview strong {
+  color: var(--color-text);
+}
+
+.successRow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: flex-start;
+}

@@ -1,0 +1,16 @@
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.link {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.errorMessage {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}

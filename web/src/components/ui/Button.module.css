@@ -1,0 +1,99 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s ease, border-color 0.15s ease, transform 0.05s ease,
+    box-shadow 0.18s ease;
+  white-space: nowrap;
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.primary {
+  background: var(--gradient-primary);
+  color: var(--color-primary-contrast);
+  box-shadow: var(--glow-primary-sm);
+}
+.primary:hover:not(:disabled) {
+  background: var(--gradient-primary-hover);
+  box-shadow: var(--glow-primary);
+}
+
+.secondary {
+  background: var(--color-secondary-bg);
+  color: var(--color-secondary-text);
+  border-color: var(--color-border);
+}
+.secondary:hover:not(:disabled) {
+  background: var(--color-secondary-bg-hover);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--color-text);
+}
+.ghost:hover:not(:disabled) {
+  background: var(--color-secondary-bg);
+}
+
+.danger {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+}
+.danger:hover:not(:disabled) {
+  background: var(--color-danger);
+  color: white;
+}
+
+.sm {
+  padding: var(--space-2) var(--space-3);
+  font-size: 0.875rem;
+}
+.md {
+  padding: var(--space-3) var(--space-5);
+  font-size: 1rem;
+}
+.lg {
+  padding: var(--space-4) var(--space-6);
+  font-size: 1.0625rem;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.label {
+  display: inline-flex;
+}
+
+.spinner {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,54 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.helper {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.successWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.successPotId {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.successBody {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.warning {
+  font-size: 0.8125rem;
+  color: var(--color-warning);
+}
+
+.explorerLink {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.successActions {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+  width: 100%;
+}
+
+.successActions > * {
+  flex: 1;
+}

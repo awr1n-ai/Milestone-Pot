@@ -1,0 +1,27 @@
+.banner {
+  margin: 0 auto var(--space-5);
+  max-width: 640px;
+  border-color: var(--color-warning);
+  background: var(--color-warning-bg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
