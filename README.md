@@ -2,6 +2,8 @@
 
 A simple group gift pot. A creator opens a pot for a recipient with an unlock date, friends contribute funds, and the recipient can claim the funds only after the unlock date — enforced on-chain on **Monad Testnet**.
 
+**Live app:** https://milestone-pot.pages.dev
+
 ## Stack
 
 - **Frontend**: Vite + React + TypeScript (`web/`)
@@ -57,6 +59,19 @@ cp .env.example .env
 npm run dev
 ```
 
+## Deployment
+
+The frontend is a static Vite build, deployed to **Cloudflare Pages** via Wrangler (direct upload, not Git-connected):
+
+```bash
+cd web
+npm run deploy
+```
+
+This runs `npm run build` and then `wrangler pages deploy` against the `milestone-pot` Cloudflare Pages project. Requires a local Cloudflare login (`npx wrangler login`) and a correctly configured `web/.env` (see `.env.example`) — the `VITE_*` values are inlined into the build at build time.
+
+Live at: **https://milestone-pot.pages.dev**
+
 ## Network reference
 
 | | |
@@ -70,4 +85,4 @@ Source: [docs.monad.xyz](https://docs.monad.xyz)
 
 ## Status
 
-Project scaffolding only. No smart contract, no UI, and nothing deployed yet.
+Deployed and working on Monad Testnet: contract live, frontend live on Cloudflare Pages, full create → contribute → claim flow functional.
