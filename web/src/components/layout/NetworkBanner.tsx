@@ -1,7 +1,7 @@
-import { Card } from "./ui/Card";
-import { Button } from "./ui/Button";
-import { TransactionStatus } from "./ui/TransactionStatus";
-import { useMonadNetwork } from "../hooks/useMonadNetwork";
+import { Card } from "../ui/Card";
+import { Button } from "../ui/Button";
+import { TransactionStatus } from "../ui/TransactionStatus";
+import { useMonadNetwork } from "../../hooks/useMonadNetwork";
 import styles from "./NetworkBanner.module.css";
 
 export function NetworkBanner() {

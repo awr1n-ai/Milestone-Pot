@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import type { FormEvent } from "react";
 import { Header } from "./components/layout/Header";
-import { NetworkBanner } from "./components/NetworkBanner";
+import { NetworkBanner } from "./components/layout/NetworkBanner";
 import { Card } from "./components/ui/Card";
 import { Button } from "./components/ui/Button";
 import { Input } from "./components/ui/Input";
