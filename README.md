@@ -96,9 +96,9 @@ Source: [docs.monad.xyz](https://docs.monad.xyz)
 - **Contract address**: [`0x0de99f93f97aeED41C8905416414D90627c15F4D`](https://testnet.monadscan.com/address/0x0de99f93f97aeED41C8905416414D90627c15F4D)
 - **Example transactions**:
   - Contract deployment: [`0xbd63ba1ec704df29ba29019704353cc6abe780e5467dfcc3dd79d4a75c7b3d69`](https://testnet.monadscan.com/tx/0xbd63ba1ec704df29ba29019704353cc6abe780e5467dfcc3dd79d4a75c7b3d69)
-  - `createPot`: _TBD — to be added before submission_
-  - `contribute`: _TBD — to be added before submission_
-  - `claim`: _TBD — to be added before submission_
+  - `createPot`: [`0xaebc4f73024285c04b0246df54007d212385e5f7be2ed2ce46b8ea5320129937`](https://testnet.monadscan.com/tx/0xaebc4f73024285c04b0246df54007d212385e5f7be2ed2ce46b8ea5320129937)
+  - `contribute`: [`0xb922b77959d1a0415847a1c268d6e5f2761675fc4f9007d12f05e113c82fb7b5`](https://testnet.monadscan.com/tx/0xb922b77959d1a0415847a1c268d6e5f2761675fc4f9007d12f05e113c82fb7b5)
+  - `claim`: _not yet performed on-chain — several pots are currently unlockable and unclaimed (e.g. pot #3, 2 MON) and ready for a live claim_
 - **Live app**: https://milestone-pot.pages.dev
 - **Demo video** (≤3 min): https://youtu.be/s78gnvC9tlg?si=Er5e9r6762_xXBVm
 
